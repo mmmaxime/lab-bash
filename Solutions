@@ -1,0 +1,398 @@
+Last login: Sun Nov 20 12:25:59 on ttys007
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) MaximeFomputer2:~ maximef$
+(base) MaximeFomputer2:~ maximef$ https://github.com/mmmaxime/lab-bash.git
+-bash: https://github.com/mmmaxime/lab-bash.git: No such file or directory
+(base) MaximeFomputer2:~ maximef$ ls
+Applications				Music
+CS6 Design and Web Premium		Pictures
+Creative Cloud Files			Public
+Creative Cloud Files (archived) (1)	Samsung
+Desktop					Sites
+Documents				Untitled.ipynb
+Downloads				Untitled1.ipynb
+Dropbox					iCloud Drive (Archive)
+Library					presentation.txt
+Movies
+(base) MaximeFomputer2:~ maximef$ mkdir
+usage: mkdir [-pv] [-m mode] directory ...
+(base) MaximeFomputer2:~ maximef$ mkdir IH-Labs
+(base) MaximeFomputer2:~ maximef$ ls
+Applications				Movies
+CS6 Design and Web Premium		Music
+Creative Cloud Files			Pictures
+Creative Cloud Files (archived) (1)	Public
+Desktop					Samsung
+Documents				Sites
+Downloads				Untitled.ipynb
+Dropbox					Untitled1.ipynb
+IH-Labs					iCloud Drive (Archive)
+Library					presentation.txt
+(base) MaximeFomputer2:~ maximef$ cd IH-Labs
+(base) MaximeFomputer2:IH-Labs maximef$ ls
+(base) MaximeFomputer2:IH-Labs maximef$ git clone https://github.com/mmmaxime/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 40 (delta 14), reused 11 (delta 11), pack-reused 17
+Unpacking objects: 100% (40/40), done.
+(base) MaximeFomputer2:IH-Labs maximef$ ls
+lab-bash
+(base) MaximeFomputer2:IH-Labs maximef$ cd lab-bash
+(base) MaximeFomputer2:lab-bash maximef$ ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+(base) MaximeFomputer2:lab-bash maximef$ cd lab-bash
+-bash: cd: lab-bash: No such file or directory
+(base) MaximeFomputer2:lab-bash maximef$ echo 'Hello World!'
+Hello World!
+(base) MaximeFomputer2:lab-bash maximef$ echo "Hello World!" >> Hello.txt
+-bash: !": event not found
+(base) MaximeFomputer2:lab-bash maximef$ mkfir new_dir
+-bash: mkfir: command not found
+(base) MaximeFomputer2:lab-bash maximef$ mkdir new_dir
+(base) MaximeFomputer2:lab-bash maximef$ rmdir new_dir
+(base) MaximeFomputer2:lab-bash maximef$ cp lorem/sed.txt lorem-copy/
+(base) MaximeFomputer2:lab-bash maximef$ cp lorem/at.txt lorem-copy/; cp lorem/lorem.txt lorem/copy
+(base) MaximeFomputer2:lab-bash maximef$ cd lorem
+(base) MaximeFomputer2:lorem maximef$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) MaximeFomputer2:lorem maximef$ cat at.txt; cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.(base) MaximeFomputer2:lorem maximef$ head sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) MaximeFomputer2:lorem maximef$ head -n3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+(base) MaximeFomputer2:lorem maximef$ tail -n3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) MaximeFomputer2:lorem maximef$ cd lorem-copu
+-bash: cd: lorem-copu: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cd lorem-copy
+-bash: cd: lorem-copy: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ echo 'Homo homini lupus.' >> sed.txt
+(base) MaximeFomputer2:lorem maximef$ tail -n3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+(base) MaximeFomputer2:lorem maximef$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) MaximeFomputer2:lorem maximef$ sed 's/wizzard/wizard/g' at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) MaximeFomputer2:lorem maximef$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) MaximeFomputer2:lorem maximef$ sed -r -i 's/ET/et/g' at.txt
+sed: illegal option -- r
+usage: sed script [-Ealn] [-i extension] [file ...]
+       sed [-Ealn] [-i extension] [-e script] ... [-f script_file] ... [file ...]
+(base) MaximeFomputer2:lorem maximef$ -r -i 's/ET/et/g' at.txt
+-bash: -r: command not found
+(base) MaximeFomputer2:lorem maximef$ sed -r -i 's/ET/et/g' at.txt
+sed: illegal option -- r
+usage: sed script [-Ealn] [-i extension] [file ...]
+       sed [-Ealn] [-i extension] [-e script] ... [-f script_file] ... [file ...]
+(base) MaximeFomputer2:lorem maximef$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cd lorem-copy
+-bash: cd: lorem-copy: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ sed -r -i 's/ET/et/g' at.txt
+sed: illegal option -- r
+usage: sed script [-Ealn] [-i extension] [file ...]
+       sed [-Ealn] [-i extension] [-e script] ... [-f script_file] ... [file ...]
+(base) MaximeFomputer2:lorem maximef$ cat/etc
+-bash: cat/etc: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cat/etc/passwd
+-bash: cat/etc/passwd: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ awk -F':' '{ print $1}' /etc/passwd
+##
+# User Database
+#
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+# Open Directory.
+#
+# See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+##
+nobody
+root
+daemon
+_uucp
+_taskgated
+_networkd
+_installassistant
+_lp
+_postfix
+_scsd
+_ces
+_appstore
+_mcxalr
+_appleevents
+_geod
+_devdocs
+_sandbox
+_mdnsresponder
+_ard
+_www
+_eppc
+_cvs
+_svn
+_mysql
+_sshd
+_qtss
+_cyrus
+_mailman
+_appserver
+_clamav
+_amavisd
+_jabber
+_appowner
+_windowserver
+_spotlight
+_tokend
+_securityagent
+_calendar
+_teamsserver
+_update_sharing
+_installer
+_atsserver
+_ftp
+_unknown
+_softwareupdate
+_coreaudiod
+_screensaver
+_locationd
+_trustevaluationagent
+_timezone
+_lda
+_cvmsroot
+_usbmuxd
+_dovecot
+_dpaudio
+_postgres
+_krbtgt
+_kadmin_admin
+_kadmin_changepw
+_devicemgr
+_webauthserver
+_netbios
+_warmd
+_dovenull
+_netstatistics
+_avbdeviced
+_krb_krbtgt
+_krb_kadmin
+_krb_changepw
+_krb_kerberos
+_krb_anonymous
+_assetcache
+_coremediaiod
+_launchservicesd
+_iconservices
+_distnote
+_nsurlsessiond
+_nsurlstoraged
+_displaypolicyd
+_astris
+_krbfast
+_gamecontrollerd
+_mbsetupuser
+_ondemand
+_xserverdocs
+_wwwproxy
+_mobileasset
+_findmydevice
+_datadetectors
+_captiveagent
+_ctkd
+_applepay
+_hidd
+_cmiodalassistants
+_analyticsd
+_fpsd
+_timed
+_nearbyd
+_reportmemoryexception
+_driverkit
+(base) MaximeFomputer2:lorem maximef$ git config user.name
+Maxime Favreau
+(base) MaximeFomputer2:lorem maximef$ pwd
+/Users/maximef/IH-Labs/lab-bash/lorem
+(base) MaximeFomputer2:lorem maximef$ find .txt
+find: .txt: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ find . -type f -name "*.txt"
+./at.txt
+./lorem.txt
+./sed.txt
+(base) MaximeFomputer2:lorem maximef$ wc -l sed.txt
+      10 sed.txt
+(base) MaximeFomputer2:lorem maximef$ cd lorem-copy
+-bash: cd: lorem-copy: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+(base) MaximeFomputer2:lorem maximef$ sed -l sed.txt
+sed: 1: "sed.txt": unterminated substitute pattern
+(base) MaximeFomputer2:lorem maximef$ wc -l sed.txt
+      10 sed.txt
+(base) MaximeFomputer2:lorem maximef$ ls | wc -l
+       5
+(base) MaximeFomputer2:lorem maximef$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ find .//. ! -lorem . -print | grep -c //
+find: -lorem: unknown primary or operator
+0
+(base) MaximeFomputer2:lorem maximef$ grep -a 'lorem' | wc -l
+
+grep -a 'lorem' | wc -l
+
+
+ls dq "lorem" | wc -1
+ls -dq *lorem* | wc -1
+
+git add.
+(base) MaximeFomputer2:lorem maximef$
+
+
+^C
+(base) MaximeFomputer2:lorem maximef$ find "lorem"
+find: lorem: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ cd IH-Labs
+-bash: cd: IH-Labs: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ ls
+at.txt		at.txte		copy		lorem.txt	sed.txt
+(base) MaximeFomputer2:lorem maximef$ cd lab-bash
+-bash: cd: lab-bash: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ lab-bash
+-bash: lab-bash: command not found
+(base) MaximeFomputer2:lorem maximef$ cd IH-Labs
+-bash: cd: IH-Labs: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ ls
+at.txt		at.txte		copy		lorem.txt	sed.txt
+(base) MaximeFomputer2:lorem maximef$ cd ls
+-bash: cd: ls: No such file or directory
+(base) MaximeFomputer2:lorem maximef$ mv
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+(base) MaximeFomputer2:lorem maximef$ cd
+(base) MaximeFomputer2:~ maximef$ cd ls
+-bash: cd: ls: No such file or directory
+(base) MaximeFomputer2:~ maximef$ cd IH-Labs
+(base) MaximeFomputer2:IH-Labs maximef$ lab-bash
+-bash: lab-bash: command not found
+(base) MaximeFomputer2:IH-Labs maximef$ cd lab-bash
+(base) MaximeFomputer2:lab-bash maximef$ find . -name 'lorem*.*' | wc -l
+       1
+(base) MaximeFomputer2:lab-bash maximef$ ls
+Solutions	inputs		lorem-copy	readme.md
+exercices	lorem		outputs
+(base) MaximeFomputer2:lab-bash maximef$ git add .
+(base) MaximeFomputer2:lab-bash maximef$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .DS_Store
+	new file:   Solutions
+	new file:   lorem-copy/at.txt
+	new file:   lorem-copy/sed.txt
+	new file:   lorem/copy
+	modified:   lorem/sed.txt
+
+(base) MaximeFomputer2:lab-bash maximef$ git commit -m 'QUEEN ERIN'
+[master a4a39af] QUEEN ERIN
+ 6 files changed, 24 insertions(+)
+ create mode 100644 Solutions
+ create mode 100755 lorem-copy/at.txt
+ create mode 100755 lorem-copy/sed.txt
+ create mode 100755 lorem/copy
+(base) MaximeFomputer2:lab-bash maximef$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 801 bytes | 801.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/mmmaxime/lab-bash.git
+   689f07d..a4a39af  master -> master
+(base) MaximeFomputer2:lab-bash maximef$
